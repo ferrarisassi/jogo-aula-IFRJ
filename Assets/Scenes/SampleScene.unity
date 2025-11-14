@@ -427,7 +427,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -471,8 +471,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   target: {fileID: 842868303}
-  smoothTime: 0.03
-  offset: {x: 0, y: 1, z: -10}
+  smoothTimeX: 0.3
+  smoothTimeY: 0
+  offset: {x: 0, y: 0, z: -10}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,8 +665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b8bb9d59b899ad4a9008d9bb481e3dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController
-  moveSpeed: 5
-  jumpForce: 30
+  moveSpeed: 10
+  jumpForce: 40
   groundCheck: {fileID: 262958433}
   groundCheckRadius: 0.2
   groundLayer:
@@ -866,7 +867,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 31.717796, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -876,7 +877,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 91.90892, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &1698117070
 Transform:
@@ -887,7 +888,7 @@ Transform:
   m_GameObject: {fileID: 1698117067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.18, y: -2.09, z: 0}
+  m_LocalPosition: {x: -16.6, y: -6.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -907,7 +908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.0715
+      value: 7.7822113
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalScale.z
@@ -919,7 +920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.3257
+      value: -7.1811
       objectReference: {fileID: 0}
     - target: {fileID: 2922138827735352370, guid: 7b977d9afb4847e4c87ef614e845f4a3, type: 3}
       propertyPath: m_LocalPosition.z
