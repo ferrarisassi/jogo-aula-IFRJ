@@ -3,9 +3,12 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public float maxHealth = 100f;
+
     public float currentHealth;
     
     private Rigidbody2D rb;
+
+    public HealthBar healthBar;
     
     void Start()
     {
@@ -21,6 +24,8 @@ public class PlayerHealth : MonoBehaviour
         // Aplica knockback
         rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
         
+        healthBar.UpdateHealthBar(currentHealth, maxHealth);
+
         if (currentHealth <= 0)
         {
             Die();
